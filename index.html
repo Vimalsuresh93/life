@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Life</title>
+</head>
+<body>
+   <header id="header" >
+      <a href="#"class="logo">life</a>
+      <ul>
+      <li><a href="#" class="active">Home</a></li> 
+      <li><a href="#">About</a></li> 
+      <li><a href="#">Destination</a></li> 
+      <li><a href="#">Contact</a></li> 
+    </ul>
+   </header>
+   <section>
+    <h2 id="text"><span>It's for a new</span><br>Life</h2>
+   <img src="bird1.png" id="bird1">
+   <img src="bird2.png" id="bird2">
+   <img src="forest.png" id="forest">
+       <a href="#" id="btn">Explore</a>
+       <img src="rocks.png" id="rocks">
+       <img src="water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>About</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus in condimentum iaculis, sem mauris imperdiet nisl, sed ultrices neque massa id nibh. Quisque rutrum, odio eget pharetra pulvinar, sem mauris iaculis sem, eu fermentum risus metus ac leo. Vestibulum consequat mi orci, ut egestas elit mollis ut. Nunc tempor, velit vel malesuada tempus, leo augue varius nibh, ac luctus eros libero in eros. Donec tincidunt suscipit diam quis pellentesque. Aenean sed augue nunc. Vivamus eget metus suscipit, finibus nisi ac, vulputate odio. Aliquam erat volutpat. Fusce luctus arcu sapien, vel faucibus risus pharetra a. Vestibulum sagittis quam mattis tincidunt hendrerit. Fusce laoreet interdum justo, vel rutrum dui elementum nec. Aenean egestas ultrices diam. Praesent cursus ut nulla id consequat. Duis porttitor tellus id odio tempus, eget viverra urna iaculis. Donec in tellus lobortis tellus commodo pellentesque. Morbi felis mauris, euismod imperdiet tincidunt quis, gravida sit amet dui.
+
+Nam quam massa, hendrerit vel pellentesque ut, faucibus in neque. Quisque malesuada lacinia facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et ultrices tellus, at auctor nulla. Nunc nec pellentesque urna. Sed faucibus nec odio vitae dictum. Aliquam fermentum vulputate lectus non consectetur. Maecenas eleifend orci risus, ac rutrum mauris ullamcorper ac. Etiam eleifend dapibus luctus.
+
+Vestibulum imperdiet justo et sem vehicula venenatis. Donec et lacus in nunc porta dignissim. Vestibulum augue odio, aliquet non iaculis id, tristique at mi. Phasellus auctor pellentesque porta. Suspendisse condimentum massa diam, et cursus dolor placerat sed. Mauris eu mauris arcu. Ut dictum, risus non placerat accumsan, orci diam facilisis lacus, non scelerisque ante tortor in urna. Aliquam erat volutpat.
+
+Quisque vestibulum, risus ut vehicula maximus, magna neque volutpat enim, in suscipit dui magna id eros. Cras lacinia in dolor non laoreet. Integer gravida maximus lorem, in rutrum mi consectetur egestas. Curabitur venenatis, nunc sit amet mollis bibendum, tortor est pretium metus, eu lobortis libero tellus sit amet nunc. Morbi eu placerat tortor. In vitae placerat sem. Curabitur laoreet eros in mauris sodales blandit.
+
+In tempus urna molestie feugiat vehicula. Integer in neque nec enim tincidunt mattis. Vestibulum elementum arcu nec lectus sollicitudin, nec varius lectus tempus. Proin orci orci, mollis at dignissim vitae, porta id libero. Nam nec augue ut felis posuere posuere eu vel quam. Vivamus enim mauris, hendrerit ac auctor eget, gravida at mi. Nunc quis finibus nunc, et venenatis nulla. Aliquam rutrum urna in purus viverra, eget euismod turpis vestibulum. Sed finibus mi vitae velit varius iaculis. Phasellus condimentum pulvinar mi, eget porttitor turpis. Nulla sed sodales purus. Fusce mollis non lacus a lacinia. Vivamus nec massa sit amet turpis scelerisque consequat. Suspendisse in enim vitae enim mattis dictum. Fusce fringilla nisl nibh, at varius magna scelerisque in. Aliquam eget faucibus nunc.
+        </p>
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+window.addEventListener("scroll",function(){
+    
+var value = window.scrollY;
+// console.log(value)
+text.style.top = 50 + value * +0.5 + 'px';
+bird1.style.top= value * -1.5 + 'px';
+bird1.style.left= value * 2 + 'px';
+bird2.style.top= value * -1.5 + 'px';
+bird2.style.top= value * -5 + 'px';
+btn.style.marginTop= value * 1.5 + 'px';
+rocks.style.top= value * -0.12 + 'px';
+forest.style.top= value * 0.25 +'px';
+header.style.top= value * 0.5 +'px';
+})
+    </script>
+</body>
+</html>
